@@ -59,9 +59,9 @@ function verifyToken (req, res, next) {
     })
   }
 }
-
+//route sécurisé via le token
 app.get('/me', verifyToken, (req, res) => {
-  res.send('Prend moi Maxime!')
+  res.send('Prend moi !')
 })
 
 app.post('/user', async (req, res) => { //normalment il faut crypter/controler les données

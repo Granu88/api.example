@@ -1,21 +1,22 @@
 {
   "name": "api.example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Api example",
   "main": "index.mjs",
   "scripts": {
+    "docs": "node_modules/apidoc/bin/apidoc -e '(node_modules|docs|src)' -o docs/",
     "start": "nodemon -r @std/esm index.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Granu88/api.example.git"
+    "url": "git+https://github.com/mons54/api.example.git"
   },
-  "author": "",
+  "author": "Julien Simonet <j.mons54@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Granu88/api.example/issues"
+    "url": "https://github.com/mons54/api.example/issues"
   },
-  "homepage": "https://github.com/Granu88/api.example#readme",
+  "homepage": "https://github.com/mons54/api.example#readme",
   "dependencies": {
     "@std/esm": "^0.26.0",
     "bcryptjs": "^2.4.3",
@@ -25,5 +26,8 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.1"
+  },
+  "devDependencies": {
+    "apidoc": "^0.19.0"
   }
 }
